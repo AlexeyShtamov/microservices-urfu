@@ -1,3 +1,15 @@
 spring:
   application:
     name: api-gateway
+  redis:
+    host: localhost
+    port: 6379
+service:
+  user-url: http://localhost:8081
+  order-url: http://localhost:8082
+  product-url: http://localhost:8083
+security:
+  jwt:
+    token: demo-token
+server:
+  port: 8080
